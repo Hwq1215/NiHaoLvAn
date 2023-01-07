@@ -1,5 +1,5 @@
 <template>
-    <div id="HomePage">
+    <div id="Program">
         <!-- <div class="row">
             <div id="left" class="col-md-4 col-xs-12">
                 <ul class="left-container wow bounceInLeft">
@@ -87,7 +87,7 @@ export default {
 }
 
 /* 整体盒子 */
-#HomePage {
+#Program {
     width: 100%;
 }
 

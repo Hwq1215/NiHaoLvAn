@@ -1,6 +1,6 @@
 <template>
-    <div id="Service">
-        <div class="container text-center">
+    <div id="Technology">
+        <!-- <div class="container text-center">
             <h3>我们的服务</h3>
             <p style="color:#b2b2b2">The Best Service You Never See</p>
         </div>
@@ -21,6 +21,111 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+        <div class="container-fuild" id="Show">
+            <div class="show">
+                <!-- <img src="@/assets/img/trust_team.svg" alt="" class="excavator">
+                <div class="video"> -->
+                这里放轮播图
+                <!-- <a href="#"><img src="@/assets/img/learn_more.svg" alt=""></a> -->
+                <!-- <video src=""></video> -->
+            </div>
+        </div>
+        <div class="container-fuild" id="ChiniTransTech">
+            <div class="chini_trans_tech">
+                <span>&nbsp;</span>
+                <img src="@/assets/img/chini_trans_tech_title.svg" alt="">
+                <div class="chini_trans_tech_show">
+                    这里放轮播图
+                </div>
+                <div class="chini_trans_tech_intr">
+                   <img src="@/assets/img/chini_trans_tech_intr.svg" alt="">
+                   <div class="buy">
+                    <a href="#"><img src="@/assets/img/buy.svg" alt=""></a>
+                   </div>
+                </div>
+                <div class="switch">
+                    <div class="theory">
+                        <a href="#"><img src="@/assets/img/theory.svg" alt=""></a>
+                    </div>
+                    <div class="none effect">
+                        <a href="#"><img src="@/assets/img/effect.svg" alt="" class="linkA"></a>
+                    </div>
+                    <div class="none service">
+                        <a href="#"><img src="@/assets/img/service.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fuild" id="DiolCompreTech">
+            <div class="diol_compre_tech">
+                <span>&nbsp;</span>
+                <img src="@/assets/img/diol_compre_tech_title.svg" alt="">
+                <div class="diol_compre_tech_show">
+                    这里放轮播图
+                </div>
+                <div class="diol_compre_tech_intr">
+                   <img src="@/assets/img/diol_compre_tech_intr.svg" alt="">
+                   <div class="buy">
+                    <a href="#"><img src="@/assets/img/buy.svg" alt=""></a>
+                   </div>
+                </div>
+                <div class="switch_diol">
+                    
+                    <div class="none effect">
+                        <a href="#"><img src="@/assets/img/effect.svg" alt=""></a>
+                    </div>
+                    <div class="none trans_value">
+                        <a href="#"><img src="@/assets/img/trans_value.svg" alt=""></a>
+                    </div>
+                    <div class="none service">
+                        <a href="#"><img src="@/assets/img/service.svg" alt=""></a>
+                    </div>
+                    <div class="theory">
+                        <a href="#"><img src="@/assets/img/theory.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fuild" id="TransEntIntr">
+            <div class="trans_ent_intr">
+                <!-- <span>&nbsp;</span> -->
+                <img src="@/assets/img/trans_ent_intr_title.svg" alt="">
+                <div class="trans_ent_intr_show">
+                    这里放轮播图
+                </div>
+                <div class="trans_ent_intr_intr">
+                   <img src="@/assets/img/trans_ent_intr_intr.svg" alt="">
+                   <!-- <div class="buy">
+                    <a href="#"><img src="@/assets/img/buy.svg" alt=""></a>
+                   </div> -->
+                </div>
+                <!-- <div class="switch_diol">
+                    
+                    <div class="none effect">
+                        <a href="#"><img src="@/assets/img/effect.svg" alt=""></a>
+                    </div>
+                    <div class="none trans_value">
+                        <a href="#"><img src="@/assets/img/trans_value.svg" alt=""></a>
+                    </div>
+                    <div class="none service">
+                        <a href="#"><img src="@/assets/img/service.svg" alt=""></a>
+                    </div>
+                    <div class="theory">
+                        <a href="#"><img src="@/assets/img/theory.svg" alt=""></a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="container-fuild" id="WhatWeDo">
+            <div class="what_we_do">
+                <img src="@/assets/img/what_we_do.svg" alt="">
+            </div>
+        </div>
+        <div class="container-fuild" id="OurChange">
+            <div class="our_change">
+                <img src="@/assets/img/our_change.svg" alt="">
+            </div>
         </div>
     </div>
 </template>
@@ -28,25 +133,25 @@
 import { WOW } from 'wowjs';
 export default {
     name: 'Service',
-    data(){
-        return{
+    data() {
+        return {
             serviceList: [
                 {
                     id: 'section-1',
                     title: '软件定制开发',
                     eng_title: 'Customize App',
                     img: require('@/assets/img/service1.jpg')
-                },{
+                }, {
                     id: 'section-2',
                     title: 'IT外包服务',
                     eng_title: 'Outsourcing',
                     img: require('@/assets/img/service2.jpg')
-                },{
+                }, {
                     id: 'section-3',
                     title: '网上商城建设',
                     eng_title: 'eCommerce Site',
                     img: require('@/assets/img/service3.jpg')
-                },{
+                }, {
                     id: 'section-4',
                     title: 'iOS应用定制开发',
                     eng_title: 'iOS App Dev',
@@ -55,12 +160,12 @@ export default {
             ]
         }
     },
-    mounted(){
+    mounted() {
         var wow = new WOW();
         wow.init();
     },
-    methods:{
-        ServiceClick(id){
+    methods: {
+        ServiceClick(id) {
             this.$router.push({
                 name: 'servicedetail',
                 params: {
@@ -72,7 +177,233 @@ export default {
 }
 </script>
 <style scoped>
-.Service-container{
+#Technology {
+    width: 100%;
+}
+
+/* 轮播图 */
+#Show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.show {
+    /* width: auto;
+  height: auto; */
+    width: 1440px;
+    height: 518px;
+    position: relative;
+    background-color: #FFA54D;
+}
+
+/* 赤泥转化技术 */
+#ChiniTransTech {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chini_trans_tech {
+    width: 1440px;
+    height: 748px;
+    position: relative;
+}
+.chini_trans_tech>span {
+    line-height: 56px;
+}
+.chini_trans_tech>img {
+    display: block;
+    margin: 0 auto;
+}
+.chini_trans_tech_show {
+    width: 584px;
+    height: 372px;
+    position: absolute;
+    top: 134px;
+    left: 111px;
+    background-color: #B9B9B9;
+    border-radius: 18px;
+}
+.chini_trans_tech_intr {
+    width: 589px;
+    height: 305px;
+    position: absolute;
+    top:160px;
+    right: 129px;
+}
+.buy {
+    position: absolute;
+    top: 269px;
+    right: 4px;
+}
+.switch {
+    width: 542.41px;
+    height: 139.43px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    position: absolute;
+    top: 557.57px;
+    left: 464.99px;
+    
+}
+.none {
+    filter: grayscale(100%);
+}
+.switch >div:hover{
+    filter: grayscale(0);
+}
+
+/* 降碱赤泥综合利用技术 */
+#DiolCompreTech {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.diol_compre_tech {
+    width: 1440px;
+    height: 843px;
+    position: relative;
+}
+.diol_compre_tech>span {
+    line-height: 52px;
+}
+.diol_compre_tech>img {
+    display: block;
+    margin: 0 auto;
+}
+.diol_compre_tech_show {
+    width: 708px;
+    height: 334px;
+    position: absolute;
+    top: 147px;
+    left: 500px;
+    background-color: #B9B9B9;
+    border-radius: 21px;
+}
+.diol_compre_tech_intr {
+    width: 699px;
+    height: 291px;
+    position: absolute;
+    top:510px;
+    right: 223px;
+}
+.buy {
+    position: absolute;
+    top: 269px;
+    right: 4px;
+}
+.switch_diol{
+    width: 148px;
+    height: 667px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 147px;
+    left: 252px;  
+}
+.none {
+    filter: grayscale(100%);
+}
+.switch_diol >div:hover{
+    filter: grayscale(0);
+}
+
+/* 转化企业简介 */
+#TransEntIntr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.trans_ent_intr {
+    width: 1440px;
+    height: 633px;
+    position: relative;
+}
+.trans_ent_intr>img {
+    display: block;
+    /* margin: 0 auto; */
+    position: absolute;
+    left: 136px;
+}
+.trans_ent_intr_show {
+    width: 792px;
+    height: 456px;
+    position: absolute;
+    bottom: 83px;
+    left: 102px;
+    background-color: #B9B9B9;
+    border-radius: 17px;
+}
+.trans_ent_intr_intr {
+    width: 436px;
+    height: 259px;
+    position: absolute;
+    bottom:126px;
+    right: 84px;
+}
+
+/* 我们所做的 */
+#WhatWeDo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.what_we_do {
+    width: 1440px;
+    height: 1075px;
+    position: relative;
+    overflow: hidden;
+}
+
+.what_we_do>img {
+    position: absolute;
+    right: 0;
+}
+
+.what_we_do>.see_more {
+    width: 200px;
+    height: 60px;
+    position: absolute;
+    top: 99px;
+    right: 120px;
+    background-color: #FFA54D;
+    border-radius: 15px;
+}
+
+/* 我们带来的改善 */
+#OurChange {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.our_change {
+    width: 1440px;
+    height: 589px;
+    position: relative;
+    overflow: hidden;
+}
+
+.our_change>img {
+    position: absolute;
+    right: 0;
+}
+
+.our_change>.see_more {
+    width: 200px;
+    height: 60px;
+    position: absolute;
+    top: 99px;
+    right: 120px;
+    background-color: #FFA54D;
+    border-radius: 15px;
+}
+
+/* .Service-container{
     padding: 30px 50px;
 }
 .Service-item{
@@ -138,6 +469,6 @@ export default {
     opacity: 1;
     width: 90%;
     height: 90%;
-}
+} */
 </style>
 
