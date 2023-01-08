@@ -117,14 +117,11 @@
                 </div> -->
             </div>
         </div>
-        <div class="container-fuild" id="WhatWeDo">
-            <div class="what_we_do">
-                <img src="@/assets/img/what_we_do.svg" alt="">
-            </div>
-        </div>
-        <div class="container-fuild" id="OurChange">
-            <div class="our_change">
-                <img src="@/assets/img/our_change.svg" alt="">
+        <div class="container-fuild" id="Question">
+            <div class="question">
+                <!-- <span>&nbsp;</span> -->
+                <img src="@/assets/img/question.svg" alt="">
+                
             </div>
         </div>
     </div>
@@ -345,62 +342,21 @@ export default {
     right: 84px;
 }
 
-/* 我们所做的 */
-#WhatWeDo {
+/* 遇到问题？ */
+#Question {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-.what_we_do {
+.question {
     width: 1440px;
-    height: 1075px;
+    height: 581px;
     position: relative;
     overflow: hidden;
 }
-
-.what_we_do>img {
-    position: absolute;
-    right: 0;
-}
-
-.what_we_do>.see_more {
-    width: 200px;
-    height: 60px;
-    position: absolute;
-    top: 99px;
-    right: 120px;
-    background-color: #FFA54D;
-    border-radius: 15px;
-}
-
-/* 我们带来的改善 */
-#OurChange {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.our_change {
-    width: 1440px;
-    height: 589px;
-    position: relative;
-    overflow: hidden;
-}
-
-.our_change>img {
-    position: absolute;
-    right: 0;
-}
-
-.our_change>.see_more {
-    width: 200px;
-    height: 60px;
-    position: absolute;
-    top: 99px;
-    right: 120px;
-    background-color: #FFA54D;
-    border-radius: 15px;
+.question>img {
+    /* display: block; */
+    /* margin: 0 auto; */
 }
 
 /* .Service-container{

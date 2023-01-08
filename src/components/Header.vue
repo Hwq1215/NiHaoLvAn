@@ -82,27 +82,27 @@ export default {
         {
           name: "项目",
           path: "/software",
-          children: [
-            {
-              name: "智能小镇管理系统",
-              path: "/software/smartTown"
-            },
-            {
-              name: "大数据管理系统",
-              path: "/software/bigData"
-            }
-          ]
+          // children: [
+          //   {
+          //     name: "智能小镇管理系统",
+          //     path: "/software/smartTown"
+          //   },
+          //   {
+          //     name: "大数据管理系统",
+          //     path: "/software/bigData"
+          //   }
+          // ]
         },
         {
           name: "技术",
           path: "/service",
           children: []
         },
-        // {
-        //   name: "新闻动态",
-        //   path: "/newsinformation",
-        //   children: []
-        // },
+        {
+          name: "案例",
+          path: "/newsinformation",
+          children: []
+        },
         // {
         //   name: "公司介绍",
         //   path: "/companyintroduction",
@@ -193,7 +193,7 @@ export default {
   line-height: 100px;
   float: right;
   margin: 0;
-  max-width: 800px;
+  max-width: 900px;
 }
 /* 导航栏 每个导航 */
 #header .header-nav .header-nav-wrapper > li {
@@ -204,7 +204,7 @@ export default {
 #header .header-nav .header-nav-wrapper > li > .nav-link{
   width: 120px;
   font-size: 24px !important;
-  margin: 0 30px !important;
+  /* margin: 0 0px !important; */
 }
 /* 导航栏 每个导航下面的 a 链接 */
 #header .header-nav .header-nav-wrapper > li > .nav-link > a {
