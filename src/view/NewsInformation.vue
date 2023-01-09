@@ -1,205 +1,299 @@
 <template>
-    <div id="NewsInformation">
-        <div class="container">
-            <div class="container text-center">
-                <h3>新闻动态</h3>
-                <p style="color:#b2b2b2">Company News</p>
+    <div id="Case">
+        <div class="container-fuild" id="Experience">
+            <div class="experience">
+                <img src="@/assets/img/experience.svg" alt="" class="excavator">
+                <div class="learnmore">
+                    <a href="#"><img src="@/assets/img/learn_more_2.svg" alt=""></a>
+                </div>
             </div>
-            <div class="nav container text-center">
-                <a href="#" class="active">公司新闻</a>
-                <a href="#">行业动态</a>
+        </div>
+        <!-- <div class="container-fuild" id="Example">
+            <div id="Header" class="container-fuild">
+                <div class="header-nav container hidden-xs">
+                    <ul class="header-nav-wrapper">
+                        <li v-for="(item, index) in navList" :key="index" :class="index == navIndex ? 'active' : ''"
+                            @click="navClick(index, item.name)">
+                            <div class="nav-link">
+                                <router-link :to="item.path">
+                                    {{ item.name }}
+                                </router-link>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <ul class="news-container container-fuild">
-                <li v-for="(item,index) in newsList" :key="index" class="wow fadeIn">
-                    <div class="content">
-                        <p>{{item.title}}</p>
-                        <p>{{item.introduce}}</p>
+        </div> -->
+        <div class="container-fuild" id="SpecificCase">
+            <div class="materials">
+                <div class="purchase">
+                        <a href="#">
+                            <img src="@/assets/img/purchase.svg" alt="">
+                        </a>
                     </div>
-                    <div class="time">
-                        <p>{{item.date}}</p>
-                        <span>{{item.year}}</span>
-                    </div>
-                    <div class="circle">
-                        <img src="../assets/img/circle.png">
-                        <i class="line center-block"></i>
-                    </div>
-                </li>
-            </ul>
-            <div class="contaianer-fuild text-center more">
-                <i class="glyphicon glyphicon-th"></i>
+                <img src="@/assets/img/material.svg" alt="">
+            </div>
+            <div class="corporation">
+                <img src="@/assets/img/corporation.svg" alt="">
             </div>
         </div>
     </div>
 </template>
 <script>
-import { WOW } from 'wowjs';
 export default {
     name: 'NewsInformation',
-    data(){
-        return{
-            newsList:[
+    data() {
+        return {
+            navIndex: sessionStorage.getItem('navIndex') ? sessionStorage.getItem('navIndex') : 0,
+            menuName: "首页",
+            menuClass: "glyphicon glyphicon-menu-down",
+            navList: [
                 {
-                    id: '001',
-                    title: '世界上第一个程序员',
-                    introduce: '为计算程序拟定“算法”，写作的第四份“程序设计流程图”，被珍视为“第一位给计算机',
-                    date: '05-24',
-                    year: '2019'
-                },{
-                    id: '002',
-                    title: '世界上第二个程序员',
-                    introduce: '为计算程序拟定“算法”，写作的第四份“程序设计流程图”，被珍视为“第一位给计算机',
-                    date: '05-24',
-                    year: '2019'
-                },{
-                    id: '003',
-                    title: '世界上第三个程序员',
-                    introduce: '为计算程序拟定“算法”，写作的第四份“程序设计流程图”，被珍视为“第一位给计算机',
-                    date: '05-24',
-                    year: '2019'
-                },{
-                    id: '004',
-                    title: '世界上第四个程序员',
-                    introduce: '为计算程序拟定“算法”，写作的第四份“程序设计流程图”，被珍视为“第一位给计算机',
-                    date: '05-24',
-                    year: '2019'
-                },{
-                    id: '005',
-                    title: '世界上第五个程序员',
-                    introduce: '为计算程序拟定“算法”，写作的第五份“程序设计流程图”，被珍视为“第一位给计算机',
-                    date: '05-24',
-                    year: '2019'
-                },{
-                    id: '006',
-                    title: '世界上第六个程序员',
-                    introduce: '为计算程序拟定“算法”，写作的第五份“程序设计流程图”，被珍视为“第一位给计算机',
-                    date: '05-24',
-                    year: '2019'
+                    name: "精品案例",
+                    path: "/",
+                    children: []
+                },
+                {
+                    name: "EPC项目",
+                    path: "/software",
+                },
+                {
+                    name: "沙石材料",
+                    path: "/service",
+                    children: []
+                },
+                {
+                    name: "建筑垃圾固废",
+                    path: "/newsinformation",
+                    children: []
+                },
+                {
+                    name: "金属矿石破碎",
+                    path: "/contactus",
+                    children: []
+                },
+                {
+                    name: "工业制粉",
+                    path: "/contactus",
+                    children: []
+                },
+                {
+                    name: "全部",
+                    path: "/contactus",
+                    children: []
                 }
             ]
         }
     },
-    mounted(){
-        var wow = new WOW();
-        wow.init();
-    },
+    methods: {
+        navClick(index, name) {
+            this.navIndex = index;
+            sessionStorage.setItem('navIndex', index)
+            this.menuName = name;
+        },
+        menuClick() {
+            if (this.menuClass == "glyphicon glyphicon-menu-down") {
+                this.menuClass = "glyphicon glyphicon-menu-up";
+            } else {
+                this.menuClass = "glyphicon glyphicon-menu-down";
+            }
+        }
+    }
 }
 </script>
 <style scoped>
-.nav{
-    margin: 20px 0;
+/* 整体盒子 */
+#Case {
+    width: 100%;
+
 }
-.nav>a{
-    display: inline-block;
-    text-decoration: none;
-    width: 120px;
-    height: 45px;
-    line-height: 45px;
-    color: #333;
-    border: 1px solid #333;
+
+/* 丰富的服务经验 */
+#Experience {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.nav>a.active{
-    color: #1e73be;
-    border-color: #1e73be;
-}
-.nav>a:hover{
-    color: #1e73be;
-    border-color: #1e73be;
-}
-.news-container{
-    overflow: hidden;
-    margin-bottom: 0;
-}
-.news-container>li{
-    width: 55.6%;
-    height: 120px;
-    float: left;
-    color: #333;
-    text-align: right;
-    border-left: 1px solid transparent;
-    border-right: 1px solid transparent;
-}
-.news-container>li:hover{
-    color: #1e73be;
-    border: 1px solid #1e73be;
-    cursor: pointer;
-}
-.news-container>li:nth-of-type(2n){
-    float: right;
-    text-align: left;
-}
-.news-container>li>.content{
-    width: 60%;
-    float: left;
-    padding: 20px 0;
-}
-.news-container>li>.time{
-    width: 20%;
-    float: left;
-    padding: 10px 0;
-}
-.news-container>li>.time>p{
-    font-size: 30px;
-    margin: 5px 0;
-}
-.news-container>li>.circle{
-    width: 20%;
-    height: 100%;
-    float: left;
+
+.experience {
+    /* width: auto;
+  height: auto; */
+    max-width: 1440px;
+    max-height: 420px;
     position: relative;
 }
-.news-container>li>.circle>img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    width: 20px;
-    height: 20px;
-}
-.news-container>li>.circle>i{
-    display: block;
-    width: 1px;
+
+.experience>img {
+    width: 100%;
     height: 100%;
-    background: #707070;
 }
-.news-container>li:nth-of-type(2n)>.content{
-    float: right;
-}
-.news-container>li:nth-of-type(2n)>.time{
-    float: right;
-}
-.news-container>li:nth-of-type(2n)>.circle{
-    float: right;
-}
-.news-container>li:nth-of-type(1)>.circle>i{
-    height: 50%;
+
+.experience>.learnmore {
+    width: 233px;
+    height: 64px;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    bottom: 99px;
+    right: 381px;
 }
-.more{
-    font-size: 25px;
-    color: #707070;
+
+
+#SpecificCase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;;
 }
-.more>i{
-    cursor: pointer;
+
+.materials {
+    width: 974px;
+    height: 320px;
+    position: relative;
+    display: flex;
+    margin-bottom: 26px;
 }
-@media screen and (max-width: 767px){
-    .news-container>li{
+.corporation {
+    width: 974px;
+    height: 240px;
+    position: relative;
+    display: flex;
+    margin-bottom: 61px;
+}
+.left .right {
+    width: 480px;
+    height: 320px;
+}
+.purchase{
+    position: absolute;
+    top: 244px;
+    left: 20px;
+}
+
+
+
+.specific_caser_show {
+    width: 792px;
+    height: 456px;
+    position: absolute;
+    bottom: 83px;
+    left: 102px;
+    background-color: #B9B9B9;
+    border-radius: 17px;
+}
+
+.specific_case_intr {
+    width: 436px;
+    height: 259px;
+    position: absolute;
+    bottom: 126px;
+    right: 84px;
+}
+
+/* #Example {
+    width: 1440px;
+    margin: 0 auto;
+} */
+
+/* 案例导航 */
+/* #Header { */
+/* background: #ffffff;
+  transition: all ease 0.6s;
+  padding: 0 !important;
+  margin: 0  auto !important; */
+/* display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-nav {
+  width: 100%;
+  height: 130px;
+} */
+/* 导航栏 导航容器 */
+/* .header-nav .header-nav-wrapper {
+  line-height: 130px; */
+/* float: right; */
+/* margin: 0; */
+/* max-width: 900px; */
+/* } */
+/* 导航栏 每个导航 */
+/* .header-nav .header-nav-wrapper > li {
+  float: left;
+  margin: 0 15px;
+  position: relative;
+} */
+/* .header-nav .header-nav-wrapper > li > .nav-link{
+  width: 120px;
+  font-size: 24px !important; */
+/* margin: 0 0px !important; */
+/* } */
+/* 导航栏 每个导航下面的 a 链接 */
+/* .header-nav .header-nav-wrapper > li > .nav-link > a {
+  color: #000; */
+/* font-size: 24px !important; */
+/* font-weight: bold;
+  padding: 15px 0;
+  position: relative;
+
+  
+} */
+
+
+/* 导航栏 每个导航下面的 a 链接的下划线 */
+/* #header .header-nav .header-nav-wrapper > li > a > i {
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  opacity: 0;
+  transition: all 0.6s ease;
+  background-color: #1e73be;
+} */
+/* 导航栏 每个导航下面的 a 链接的右侧小三角 */
+/* #header .header-nav .header-nav-wrapper > li > a > span {
+  font-size: 12px;
+  transition: transform ease 0.5s;
+} */
+/* 导航栏 每个导航下面的 a 链接 鼠标滑上去的样式 */
+/* #header .header-nav .header-nav-wrapper > li > .nav-link > a:hover {
+  color: #F60C0C;
+  text-decoration: none;
+} */
+/* 导航栏 每个导航下面的 a 链接 鼠标滑上去下划线的样式 */
+/* #header .header-nav .header-nav-wrapper > li > a:hover .underline {
+  opacity: 1;
+  width: 100%;
+  left: 0;
+} */
+/* 导航栏 每个导航下面的 a 链接 鼠标滑上去三角标的样式 */
+/* #header .header-nav .header-nav-wrapper > li > a:hover span {
+  transform: rotate(180deg);
+} */
+/* 导航栏 每个导航下面的 a 链接 鼠标点击后的样式 */
+#header .header-nav .header-nav-wrapper>li.active>.nav-link>a {
+    color: #F60C0C;
+    text-decoration: none;
+    border-bottom: 2px solid #F60C0C;
+}
+
+@media screen and (max-width: 767px) {
+    .news-container>li {
         width: 100%;
     }
-    .news-container>li>.content{
+
+    .news-container>li>.content {
         width: 70%;
         text-align: left;
         float: right;
     }
-    .news-container>li>.time{
+
+    .news-container>li>.time {
         width: 30%;
         text-align: left;
         float: right;
     }
-    .news-container>li>.circle{
+
+    .news-container>li>.circle {
         display: none;
     }
 }
