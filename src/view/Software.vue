@@ -16,10 +16,8 @@
         <div class="container-fuild" id="Trust">
             <div class="trust">
                 <img src="@/assets/img/trust_team.svg" alt="" class="excavator">
-                <div class="video">
-                    这里放视频
-                    <!-- <a href="#"><img src="@/assets/img/learn_more.svg" alt=""></a> -->
-                    <video src=""></video>
+                <div class="picture">
+                    <img src="@/assets/img/trust_team_picture.svg">
                 </div>
             </div>
         </div>
@@ -111,13 +109,13 @@ export default {
     /* height: 100%; */
 }
 
-.trust>.video {
-    width: 1200px;
-    height: 672px;
+.trust>.picture {
+    width: 897px;
+    height: 583px;
     position: absolute;
-    margin: 0 120px 0 120px;
-    top: 510px;
-    background-color: #D9D9D9;
+    margin: 0 278px 0 265px;
+    top: 465px;
+
     border-radius: 40px;
 }
 
