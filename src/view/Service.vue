@@ -36,7 +36,7 @@
                 <span>&nbsp;</span>
                 <img src="@/assets/img/chini_trans_tech_title.svg" alt="">
                 <div class="chini_trans_tech_show">
-                    这里放轮播图
+                    <img src="@/assets/img/chini_trans_tech_show.svg" alt="">
                 </div>
                 <div class="chini_trans_tech_intr">
                    <img src="@/assets/img/chini_trans_tech_intr.svg" alt="">
@@ -62,7 +62,7 @@
                 <span>&nbsp;</span>
                 <img src="@/assets/img/diol_compre_tech_title.svg" alt="">
                 <div class="diol_compre_tech_show">
-                    这里放轮播图
+                    <img src="@/assets/img/diol_compre_tech_show.svg" alt="">
                 </div>
                 <div class="diol_compre_tech_intr">
                    <img src="@/assets/img/diol_compre_tech_intr.svg" alt="">
@@ -92,7 +92,7 @@
                 <!-- <span>&nbsp;</span> -->
                 <img src="@/assets/img/trans_ent_intr_title.svg" alt="">
                 <div class="trans_ent_intr_show">
-                    这里放轮播图
+                    <img src="@/assets/img/trans_ent_intr_show.svg" alt="">
                 </div>
                 <div class="trans_ent_intr_intr">
                    <img src="@/assets/img/trans_ent_intr_intr.svg" alt="">
@@ -115,13 +115,6 @@
                         <a href="#"><img src="@/assets/img/theory.svg" alt=""></a>
                     </div>
                 </div> -->
-            </div>
-        </div>
-        <div class="container-fuild" id="Question">
-            <div class="question">
-                <!-- <span>&nbsp;</span> -->
-                <img src="@/assets/img/question.svg" alt="">
-                
             </div>
         </div>
     </div>
@@ -213,24 +206,24 @@ export default {
     margin: 0 auto;
 }
 .chini_trans_tech_show {
-    width: 584px;
+    width: 570px;
     height: 372px;
     position: absolute;
     top: 134px;
     left: 111px;
-    background-color: #B9B9B9;
     border-radius: 18px;
+    overflow: hidden;
 }
 .chini_trans_tech_intr {
-    width: 589px;
-    height: 305px;
+    width: 651.01px;
+    height: 368px;
     position: absolute;
     top:160px;
-    right: 129px;
+    right: 54.99px
 }
 .buy {
     position: absolute;
-    top: 269px;
+    bottom: 0;
     right: 4px;
 }
 .switch {
@@ -270,24 +263,23 @@ export default {
     margin: 0 auto;
 }
 .diol_compre_tech_show {
-    width: 708px;
-    height: 334px;
+    width: 506px;
+    height: 279.77px;
     position: absolute;
-    top: 147px;
-    left: 500px;
-    background-color: #B9B9B9;
-    border-radius: 21px;
+    bottom: 414.23px;
+    right: 272px;
+    overflow: hidden;
 }
 .diol_compre_tech_intr {
-    width: 699px;
-    height: 291px;
+    width: 831.05px;
+    height: 353.74px;
     position: absolute;
-    top:510px;
-    right: 223px;
+    bottom: 29.26px;
+    right: 54.95px;
 }
 .buy {
     position: absolute;
-    top: 269px;
+    bottom: 0px;
     right: 4px;
 }
 .switch_diol{
@@ -331,8 +323,8 @@ export default {
     position: absolute;
     bottom: 83px;
     left: 102px;
-    background-color: #B9B9B9;
     border-radius: 17px;
+    overflow: hidden;
 }
 .trans_ent_intr_intr {
     width: 436px;

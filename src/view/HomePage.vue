@@ -20,7 +20,7 @@
     <div class="container-fuild" id="Transfrom">
       <div class="transfrom">
         <span>&nbsp;</span>
-        <img src="@/assets/img/chini_trans_tech.svg" alt="">
+        <img src="../assets/img/chini_trans_tech.svg" alt="">
       </div>
     </div>
     <!-- 降碱赤泥综合利用技术 -->
@@ -31,26 +31,26 @@
         <div class="product">
           <div class="pro_info">
             <div class="pro_info_img">
-              <img src="" alt="">
+              <img src="../assets/img/pro_info_img_1.svg" alt="">
             </div>
             <div class="pro_info_TitleAndButto">
-              <img src="../assets/img/product_information.png" alt="">
+              <a href=""><img src="../assets/img/product_information_1.svg" alt=""></a>
             </div>
           </div>
           <div class="pro_info">
             <div class="pro_info_img">
-              <img src="" alt="">
+              <img src="../assets/img/pro_info_img_2.svg" alt="">
             </div>
             <div class="pro_info_TitleAndButto">
-              <img src="../assets/img/product_information.svg" alt="">
+              <a href=""><img src="../assets/img/product_information_2.svg" alt=""></a>
             </div>
           </div>
           <div class="pro_info">
             <div class="pro_info_img">
-              <img src="" alt="">
+              <img src="../assets/img/pro_info_img_3.svg" alt="">
             </div>
             <div class="pro_info_TitleAndButto">
-              <img src="../assets/img/product_information.svg" alt="">
+              <a href=""><img src="../assets/img/product_information_3.svg" alt=""></a>
             </div>
           </div>
         </div>
@@ -62,9 +62,9 @@
         <span>&nbsp;</span>
         <img src="..\assets\img\enterprise_information.svg" alt="" class="dial_chini_tecl">
         <div class="introduce">
-          <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;过去20多年，华为抓住中国改革开放和ICT行业高速发展带来的历史机遇，坚持以客户为中心，以奋斗者为本，基于客户需求持续创新，赢得了客户的尊重和信赖，从一家立足于中国深圳特区，初始资本只有21000人民币的民营企业，稳健成长为世界500强公司。2014年，公司年销售规模达到近2882亿人民币，如今，我们的电信网络设备、IT设备和解决方案以及智能终端已应用于全球170多个国家和地区。</span>
+          <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;武汉鑫普利环保科技有限公司结合“双碳”战略大背景，以开创最具前景的赤泥综合利用产业为目标，以赤泥无害化、资源化处理为核心导向，凭借公司先进的赤泥降碱装置和赤泥综合利用产品，助力国家加快实现赤泥规模化高效利用，提升赤泥综合利用能力。公司以武汉理工大学硅酸盐建筑材料国家重点实验室及非金属矿物、材料、矿业等领域知名专家组成的技术顾问团队为该项目技术支撑提供双重保障，发展前景光明。</span>
           <div class="br"></div>
-          <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;作为全球领先的信息与通信解决方案供应商，我们为电信运营商、企业和消费者等提供有竞争力的端到端ICT挥决方案和服务，帮助客户在数字社会获得成功。</span>
+          <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 公司净利润预计2022 年实现754.62万元，至2027年实现24,956.06万元；总资产净利率呈快速上升趋势，从第二年起稳居 20%以上，到2027年总资产净利率预计达到39.94%。</span>
         </div>
         <div class="numbers">
           <img src="..\assets\img\exp_info_numbers.svg" alt="">
@@ -530,6 +530,7 @@ export default {
   height: 384px;
   background-color: #D9D9D9;
   border-radius: 21px;
+  overflow: hidden;
 }
 
 /* 产品标题与了解详情 */
