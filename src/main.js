@@ -27,7 +27,9 @@ import './assets/js/bootstrap.min'
 
 /* animate.css */
 import 'animate.css'
+import ElementUI from 'element-ui'
 
+import 'element-ui/lib/theme-chalk/index.css'
  
 /* 头部组件 */
 import Header from './components/Header'
@@ -42,10 +44,18 @@ Vue.component(Footer.name,Footer)
 import GoTop from './components/GoTop'
 Vue.component(GoTop.name,GoTop)
 
+/*登录表*/
+import LoginForm from './components/LoginForm'
+Vue.component(LoginForm.name,LoginForm)
+
 Vue.config.productionTip = false
 
-
+Vue.use(ElementUI)
 router.beforeEach((to, from, next) => {
+
+    if(sessionStorage.getItem("username")==undefined && to.name !== 'login'){
+      next({name: 'login'})
+    }
     if(to.meta.title){
       document.title = to.meta.title
     }

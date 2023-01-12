@@ -4,10 +4,10 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
-    {
-      path: '*',
-      redirect: '/'
-    }, {
+    { path: '/login',
+      name: 'login',
+      component: resolve => require(['@/view/Login.vue'],resolve)
+    },{
       path: '/',
       name: 'PageView',
       component: resolve => require(['@/view/PageView'], resolve),
