@@ -346,10 +346,10 @@ export default {
     position: relative;
     overflow: hidden;
 }
-.question>img {
+/* .question>img { */
     /* display: block; */
     /* margin: 0 auto; */
-}
+/* } */
 
 /* .Service-container{
     padding: 30px 50px;

@@ -7,10 +7,10 @@
       <!-- <div class="relatedlink">相关链接</div> -->
       <ul>
         <li class="relatedlink">相关链接:</li>
-        <li><a href="#">企业服务</a></li>
-        <li><a href="#">企业服务</a></li>
-        <li><a href="#">企业服务</a></li>
-        <li><a href="#">企业服务</a></li>
+        <li><a href="http://13567.fm086.com/">广西平果铝</a></li>
+        <li><a href="https://www.chinalco.com.cn/">中铝集团</a></li>
+        <li><a href="https://sdly.chinalco.com.cn/">中铝山东</a></li>
+        <li><a href="http://www.600219.com.cn/">南山铝业</a></li>
       </ul>
     </div>
     <!-- <p class="title">公司企业网站模板</p>
@@ -26,24 +26,34 @@
     <p class="copy">Copyright &copy; 2018 - 2019 公司名称公司名称</p> -->
     <div class="footer">
       <ul class="helplist">
-        <li class="help">帮助中心</li>
-        <li><a>版本更新</a></li>
-        <li><a>登陆系统</a></li>
-        <li><a>资讯产品</a></li>
+        <li class="help">关于我们</li>
+        <li><a>了解我们</a></li>
+        <li><a>价值与理念</a></li>
+        <li><a>社会责任</a></li>
+        <li><a>企业荣誉</a></li>
       </ul>
+      <ul class="helplist">
+        <li class="help">产品与服务</li>
+        <li><a>技术专栏</a></li>
+        <li><a>企业业务</a></li>
+        <li><a>企业产品</a></li>
+        <li><a>运营服务</a></li>
+      </ul>
+      
       <ul class="helplist">
         <li class="help">帮助中心</li>
         <li><a>版本更新</a></li>
         <li><a>登陆系统</a></li>
-        <li><a>资讯产品</a></li>
+        <li><a>咨询产品</a></li>
       </ul>
       <ul class="helplist">
-        <li class="help">帮助中心</li>
-        <li><a>版本更新</a></li>
-        <li><a>登陆系统</a></li>
-        <li><a>资讯产品</a></li>
+        <li class="help">加入我们</li>
+        <li><a>校园招聘</a></li>
+        <li><a>社会招聘</a></li>
+        <li><a>员工成长</a></li>
+        <li><a>员工福利</a></li>
       </ul>
-      <div class="tel">服务热线：400-233-222</div>
+      <!-- <div class="tel">服务热线：400-233-222</div> -->
     </div>
   </div>
 </template>

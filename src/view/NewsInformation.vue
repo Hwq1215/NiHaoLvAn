@@ -31,10 +31,36 @@
                             <img src="@/assets/img/purchase.svg" alt="">
                         </a>
                     </div>
-                <img src="@/assets/img/material.svg" alt="">
+                <img src="@/assets/img/material_1.svg" alt="">
             </div>
             <div class="corporation">
-                <img src="@/assets/img/corporation.svg" alt="">
+                <img src="@/assets/img/corporation_1.svg" alt="">
+            </div>
+        </div>
+        <div class="container-fuild" id="SpecificCase">
+            <div class="materials">
+                <div class="purchase">
+                        <a href="#">
+                            <img src="@/assets/img/purchase.svg" alt="">
+                        </a>
+                    </div>
+                <img src="@/assets/img/material_2.svg" alt="">
+            </div>
+            <div class="corporation">
+                <img src="@/assets/img/corporation_2.svg" alt="">
+            </div>
+        </div>
+        <div class="container-fuild" id="SpecificCase">
+            <div class="materials">
+                <div class="purchase">
+                        <a href="#">
+                            <img src="@/assets/img/purchase.svg" alt="">
+                        </a>
+                    </div>
+                <img src="@/assets/img/material_3.svg" alt="">
+            </div>
+            <div class="corporation">
+                <img src="@/assets/img/corporation_3.svg" alt="">
             </div>
         </div>
     </div>
@@ -138,6 +164,7 @@ export default {
 
 
 #SpecificCase {
+    margin-top: 66px;
     display: flex;
     align-items: center;
     justify-content: center;
