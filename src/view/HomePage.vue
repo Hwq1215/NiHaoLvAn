@@ -13,14 +13,31 @@
     <div class="container-fuild" id="Dialkalization">
       <div class="dialkalization">
         <span>&nbsp;</span>
-          <img src="@/assets/img/dial_info.svg" alt="">
+        <img src="@/assets/img/dial_info.svg" alt="">
       </div>
     </div>
     <!-- 赤泥转化技术 -->
     <div class="container-fuild" id="Transfrom">
       <div class="transfrom">
         <span>&nbsp;</span>
-        <img src="@/assets/img/chini_trans_tech.svg" alt="">
+        <img src="../assets/img/chini_trans_tech.svg" alt="">
+        <div id="swiper" class="container-fuild">
+          <div class="swiper-container banner-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" v-for="(item, index) in swiperList" :key="index">
+                <img class="swiper-lazy" :data-src="item.img" alt="轮播图">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="intr">
+          <img src="../assets/img/intr.svg" alt="">
+          
+        </div>
+        <div class="learn">
+         <a href="#"><img src="../assets/img/learn.svg" alt=""></a> 
+        </div>
       </div>
     </div>
     <!-- 降碱赤泥综合利用技术 -->
@@ -31,26 +48,26 @@
         <div class="product">
           <div class="pro_info">
             <div class="pro_info_img">
-              <img src="" alt="">
+              <img src="../assets/img/pro_info_img_1.svg" alt="">
             </div>
             <div class="pro_info_TitleAndButto">
-              <img src="../assets/img/product_information.png" alt="">
+              <a href=""><img src="../assets/img/product_information_1.svg" alt=""></a>
             </div>
           </div>
           <div class="pro_info">
             <div class="pro_info_img">
-              <img src="" alt="">
+              <img src="../assets/img/pro_info_img_2.svg" alt="">
             </div>
             <div class="pro_info_TitleAndButto">
-              <img src="../assets/img/product_information.svg" alt="">
+              <a href=""><img src="../assets/img/product_information_2.svg" alt=""></a>
             </div>
           </div>
           <div class="pro_info">
             <div class="pro_info_img">
-              <img src="" alt="">
+              <img src="../assets/img/pro_info_img_3.svg" alt="">
             </div>
             <div class="pro_info_TitleAndButto">
-              <img src="../assets/img/product_information.svg" alt="">
+              <a href=""><img src="../assets/img/product_information_3.svg" alt=""></a>
             </div>
           </div>
         </div>
@@ -62,289 +79,36 @@
         <span>&nbsp;</span>
         <img src="..\assets\img\enterprise_information.svg" alt="" class="dial_chini_tecl">
         <div class="introduce">
-          <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;过去20多年，华为抓住中国改革开放和ICT行业高速发展带来的历史机遇，坚持以客户为中心，以奋斗者为本，基于客户需求持续创新，赢得了客户的尊重和信赖，从一家立足于中国深圳特区，初始资本只有21000人民币的民营企业，稳健成长为世界500强公司。2014年，公司年销售规模达到近2882亿人民币，如今，我们的电信网络设备、IT设备和解决方案以及智能终端已应用于全球170多个国家和地区。</span>
+          <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;武汉鑫普利环保科技有限公司结合“双碳”战略大背景，以开创最具前景的赤泥综合利用产业为目标，以赤泥无害化、资源化处理为核心导向，凭借公司先进的赤泥降碱装置和赤泥综合利用产品，助力国家加快实现赤泥规模化高效利用，提升赤泥综合利用能力。公司以武汉理工大学硅酸盐建筑材料国家重点实验室及非金属矿物、材料、矿业等领域知名专家组成的技术顾问团队为该项目技术支撑提供双重保障，发展前景光明。</span>
           <div class="br"></div>
-          <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;作为全球领先的信息与通信解决方案供应商，我们为电信运营商、企业和消费者等提供有竞争力的端到端ICT挥决方案和服务，帮助客户在数字社会获得成功。</span>
+          <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 公司净利润预计2022
+            年实现754.62万元，至2027年实现24,956.06万元；总资产净利率呈快速上升趋势，从第二年起稳居 20%以上，到2027年总资产净利率预计达到39.94%。</span>
         </div>
         <div class="numbers">
           <img src="..\assets\img\exp_info_numbers.svg" alt="">
         </div>
       </div>
     </div>
-
-    <!-- 轮播图 -->
-    <!-- <div id="swiper" class="container-fuild">
-      <div class="swiper-container banner-swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide" v-for="(item,index) in swiperList" :key="index">
-            <img class="swiper-lazy" :data-src="item.img" alt="轮播图">
-            <div class="swiper-lazy-preloader"></div>
-            <div class="swiper-slide-title">
-                <h1>{{item.title}}</h1>
-                <p>{{item.content}}</p>
-            </div>
-          </div>
-        </div> -->
-    <!-- 如果需要分页器 -->
-    <!-- <div class="swiper-pagination"></div> -->
-
-    <!-- 如果需要导航按钮 -->
-    <!-- <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-    </div> -->
-    <!-- 大数据管理系统 -->
-    <!-- <div id="bigData" class="container-fuild">
-      <div class="row bigData-container">
-        <div class="col-xs-12 col-sm-12 col-md-6 wow zoomIn">
-          <img class="img-responsive" src="@/assets/img/img1.png" alt="大数据管理系统">
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-6">
-          <h2 class="bigData-title">
-            大数据管理系统
-            <small>/ Big Data Management System</small>
-          </h2>
-          <p>当今最领先的响应式自助建站平台。无论您是普通互联网用户，还是专业网站制作人员，都能使用起飞页设计出最具专业水准的网站。想创建一个简单的单页式站点，还是一个专业的公司网站，亦或是一个别具一格的博客？起飞页可以满足您的所有需求。</p>
-          <p>我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。无论您是普通互联网用户，还是专业网站制作人员。</p>
-          <h2 class="bigData-device">PC/PAD/Phone &nbsp; 全设备支持</h2>
-          <a href="#" class="btn btn-lg btn-block btn-info">联系我们</a>
-        </div>
-      </div>
-    </div> -->
-    <!-- 您身边的IT专家 -->
-    <!-- <div id="contactUs" class="container-fuild text-center">
-      <div class="container contactUs-container wow slideInUp">
-        <h1>您身边的IT专家</h1>
-        <h3>7x24小时提供出色的IT服务</h3>
-        <button
-          class="btn btn-default btn-sm"
-          onmouseleave="this.style.borderColor='#ffffff'; this.style.backgroundColor='#ffffff'; this.style.color='#3f3f3f';"
-          onmouseenter="this.style.backgroundColor='transparent'; this.style.borderColor='#ffffff'; this.style.color='#ffffff';"
-        >联系我们</button>
-        <div class="contactUs-contactWay">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-    </div> -->
-    <!-- 客户评价 -->
-    <!-- <div id="customer" class="container-fuild">
-      <div class="container customer-container">
-        <p class="customer-title text-center">客户评价</p>
-        <div class="swiper-container customer-swiper hidden-xs">
-          <div class="swiper-wrapper">
-            <div
-              class="swiper-slide customer-block"
-              v-for="(item,index) in customerList"
-              :key="index"
-            >
-              <div class="customer-logo">
-                <img class="center-block" :src="item.logo" alt="logo">
-              </div>
-              <div class="customer-yh">
-                <img src="@/assets/img/yinhao.png" alt="引号">
-              </div>
-              <div class="customer-content1">
-                <small>{{item.content}}</small>
-              </div>
-              <div class="customer-content2">{{item.title}}</div>
-            </div>
-          </div> -->
-    <!-- 如果需要导航按钮 -->
-    <!-- <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-        <div class="row visible-xs customer-block">
-          <div class="col-xs-12" v-for="(item,index) in customerList" :key="index">
-            <div class="customer-logo">
-              <img class="center-block" :src="item.logo" alt="logo">
-            </div>
-            <div class="customer-yh">
-              <img src="@/assets/img/yinhao.png" alt="引号">
-            </div>
-            <div class="customer-content1">
-              <small>{{item.content}}</small>
-            </div>
-            <div class="customer-content2">
-              <small>{{item.title}}</small>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- 为什么选择我们 -->
-    <!-- <div id="whyChooseUs" class="conatiner-fuild">
-      <div class="container">
-        <div class="whyChooseUs-title text-center">
-          <p>为什么选择我们的服务</p>
-          <p>THE REASON TO CHOOSING US</p>
-        </div>
-        <div class="row">
-          <div
-            class="col-xs-12 col-sm-6 col-md-3 server-wrapper"
-            v-for="(item,index) in serverList"
-            :key="index"
-          >
-            <div
-              class="server-block wow slideInUp"
-              onmouseenter="this.style.color='#28f';this.style.borderColor='#28f'"
-              onmouseleave="this.style.color='#666';this.style.borderColor='#ccc'"
-            >
-              <img class="center-block" :src="item.logo" alt="logo">
-              <p class="text-center">{{item.title}}</p>
-              <div
-                class="text-center"
-                v-html="item.content"
-                onmouseenter="this.style.color='#28f'"
-                onmouseleave="this.style.color='#ccc'"
-              ></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>-->
   </div>
 </template>
 <script>
 import Swiper from "swiper";
-import { WOW } from 'wowjs';
 export default {
   name: "HomePage",
   data() {
     return {
       swiperList: [
         {
-          img: require("@/assets/img/banner1.png"),
-          path: "",
-          title: '您身边的IT专家1',
-          content: '宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介',
+          img: require("../assets/img/transform_swipper_1.svg"),
+          path: ''
         },
         {
-          img: require("@/assets/img/banner2.jpg"),
-          path: "",
-          title: '您身边的IT专家2',
-          content: '宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介',
+          img: require("../assets/img/transform_swipper_1.svg"),
+          path: ''
         },
         {
-          img: require("@/assets/img/banner1.png"),
-          path: "",
-          title: '您身边的IT专家3',
-          content: '宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介',
-        },
-        {
-          img: require("@/assets/img/banner2.jpg"),
-          path: "",
-          title: '您身边的IT专家4',
-          content: '宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介',
-        }
-      ],
-      customerList: [
-        {
-          logo: require("@/assets/img/logo_hp.png"),
-          title:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。",
-          content:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。"
-        },
-        {
-          logo: require("@/assets/img/logo_kk.png"),
-          title:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。",
-          content:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。"
-        },
-        {
-          logo: require("@/assets/img/logo_toyota.png"),
-          title:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。",
-          content:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。"
-        },
-        {
-          logo: require("@/assets/img/logo_kk.png"),
-          title:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。",
-          content:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。"
-        },
-        {
-          logo: require("@/assets/img/logo_hp.png"),
-          title:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。",
-          content:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。"
-        },
-        {
-          logo: require("@/assets/img/logo_toyota.png"),
-          title:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。",
-          content:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。"
-        },
-        {
-          logo: require("@/assets/img/logo_kk.png"),
-          title:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。",
-          content:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。"
-        },
-        {
-          logo: require("@/assets/img/logo_hp.png"),
-          title:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。",
-          content:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。"
-        },
-        {
-          logo: require("@/assets/img/logo_toyota.png"),
-          title:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。",
-          content:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。"
-        },
-        {
-          logo: require("@/assets/img/logo_hp.png"),
-          title:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。",
-          content:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。"
-        },
-        {
-          logo: require("@/assets/img/logo_kk.png"),
-          title:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。",
-          content:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。"
-        },
-        {
-          logo: require("@/assets/img/logo_hp.png"),
-          title:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。",
-          content:
-            "您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。您可以双击这里或者点击编辑按钮来修改内容。您还可以添加图标，按钮，图片等常用元素。"
-        }
-      ],
-      serverList: [
-        {
-          logo: require("@/assets/img/tel.png"),
-          title: "核心优势1",
-          content: "<p>由专业客服提供人工服务</p>负责疑难问题和故障受理"
-        },
-        {
-          logo: require("@/assets/img/computer.png"),
-          title: "核心优势2",
-          content: "<p>利用远程视频工具，提供协助</p>帮助客户进行调试、解决故障"
-        },
-        {
-          logo: require("@/assets/img/qq.png"),
-          title: "核心优势3",
-          content: "<p>利用企业QQ提供在线解答</p>帮助企业快速准确解决问题和故障"
-        },
-        {
-          logo: require("@/assets/img/skill.png"),
-          title: "核心优势4",
-          content: "<p>由技术支持工程师，负责问题解答</p>需求受理及故障受理"
+          img: require("../assets/img/transform_swipper_1.svg"),
+          path: ''
         }
       ]
     };
@@ -353,7 +117,7 @@ export default {
     /* banner-swiper */
     new Swiper(".banner-swiper", {
       loop: true, // 循环模式选项
-      effect: 'fade',
+      effect: 'cube',
       //自动播放
       autoplay: {
         delay: 3000,
@@ -378,32 +142,32 @@ export default {
       observeParents: true //修改swiper的父元素时，自动初始化swiper
     });
     /* customer-swiper */
-    new Swiper(".customer-swiper", {
-      loop: true, // 循环模式选项
-      slidesPerView: 3,
-      //自动播放
-      autoplay: {
-        delay: 3000,
-        stopOnLastSlide: false,
-        disableOnInteraction: false
-      },
-      // 如果需要前进后退按钮
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-      },
-      observer: true, //修改swiper自己或子元素时，自动初始化swiper
-      observeParents: true //修改swiper的父元素时，自动初始化swiper
-    });
+    // new Swiper(".customer-swiper", {
+    //   loop: true, // 循环模式选项
+    //   slidesPerView: 3,
+    //   //自动播放
+    //   autoplay: {
+    //     delay: 3000,
+    //     stopOnLastSlide: false,
+    //     disableOnInteraction: false
+    //   },
+    //   // 如果需要前进后退按钮
+    //   navigation: {
+    //     nextEl: ".swiper-button-next",
+    //     prevEl: ".swiper-button-prev"
+    //   },
+    //   observer: true, //修改swiper自己或子元素时，自动初始化swiper
+    //   observeParents: true //修改swiper的父元素时，自动初始化swiper
+    // });
     /* wowjs动画 */
-    var wow = new WOW({
-      boxClass: 'wow',
-      animateClass: 'animated',
-      offset: 0,
-      mobile: true,
-      live: true
-    })
-    wow.init();
+    // var wow = new WOW({
+    //   boxClass: 'wow',
+    //   animateClass: 'animated',
+    //   offset: 0,
+    //   mobile: true,
+    //   live: true
+    // })
+    // wow.init();
   }
 };
 </script>
@@ -460,9 +224,10 @@ export default {
   position: relative;
 }
 
-.dialkalization > span {
+.dialkalization>span {
   line-height: 78px;
 }
+
 .dialkalization>img {
   display: block;
   margin: 0 auto;
@@ -482,12 +247,36 @@ export default {
   position: relative;
   background-image: url('../assets/img/transfrom.png');
 }
-.transfrom > span {
+
+.transfrom>span {
   line-height: 46px;
 }
+
 .transfrom>img {
   display: block;
   margin: 0 auto;
+}
+
+.banner-swiper {
+  height: 500px;
+  width: 451.29px;
+  position: absolute;
+  top: 119px;
+  right: 200px;
+  border-radius: 34px;
+  overflow: hidden;
+}
+
+.intr {
+  position: absolute;
+  top: 130px;
+  left: 200px;
+}
+
+.learn {
+  position: absolute;
+  left: 300px;
+  bottom: 75px;
 }
 
 /* 降碱赤泥综合利用技术 */
@@ -530,6 +319,7 @@ export default {
   height: 384px;
   background-color: #D9D9D9;
   border-radius: 21px;
+  overflow: hidden;
 }
 
 /* 产品标题与了解详情 */
