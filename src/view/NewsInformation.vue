@@ -8,22 +8,6 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="container-fuild" id="Example">
-            <div id="Header" class="container-fuild">
-                <div class="header-nav container hidden-xs">
-                    <ul class="header-nav-wrapper">
-                        <li v-for="(item, index) in navList" :key="index" :class="index == navIndex ? 'active' : ''"
-                            @click="navClick(index, item.name)">
-                            <div class="nav-link">
-                                <router-link :to="item.path">
-                                    {{ item.name }}
-                                </router-link>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div> -->
         <div class="container-fuild" id="SpecificCase">
             <div class="materials">
                 <div class="purchase">
