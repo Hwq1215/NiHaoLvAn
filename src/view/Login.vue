@@ -6,7 +6,6 @@
             trigger="click" 
             :autoplay="false" 
             height="500px" 
-            indicator-position="outside"
             arrow="hidden"
             class="carousel-outside">
                 <el-carousel-item >
@@ -45,29 +44,39 @@
 
 <style>
     .login-item{
-        background: url("../assets/img/login_background.png");
+        background: url("../assets/img/login.svg");
         background-size: cover;
         margin-top: -5%;
+        
     }
 
     .login-form{
-        width: 407px;
+        width: 400px;
         height: 663px;
         margin-left: 55%;
         margin-top: 12%;
-        
     }
 
     .el-carousel{
-        border: #000000;
-        border-radius: 20px 20px 60px 60px;
-        
+        border: 100px #ffffff;
+        border-radius: 20px 20px 20px 20px;;
+        border: inline;
+    }
 
+    .el-carousel__button{
+        border: 1px #b1b19f;
+        border-radius: 5px;
+        height: 8px;
+        width: 40px;
+        background-color: #f79f4d;
+        border-style: solid;
+        opacity: 0.3;
     }
 
     .el-carousel__item:nth-child(n) {
+    margin: auto;
     background-color: #ffffff;
-    opacity: 0.95;
+    opacity: 0.90;
     }
 
 

@@ -60,7 +60,9 @@
               <i class="underline"></i>
             </router-link>
           </li>
+          <li>登录</li>
         </ul>
+        
       </div>
     </div>
   </div>
@@ -76,7 +78,7 @@ export default {
       navList: [
         {
           name: "首页",
-          path: "/",
+          path: "/home",
           children: []
         },
         {
@@ -117,15 +119,19 @@ export default {
           name: "联系我们",
           path: "/contactus",
           children: []
-        }
+        },
       ]
     };
   },
+  created(){
+    this.navIndex = sessionStorage.getItem('navIndex') ? sessionStorage.getItem('navIndex') : 0
+  },  
   methods: {
     navClick(index, name) {
       this.navIndex = index;
       sessionStorage.setItem('navIndex',index)
       this.menuName = name;
+      console.log(index + name);
     },
     menuClick() {
       if (this.menuClass == "glyphicon glyphicon-menu-down") {

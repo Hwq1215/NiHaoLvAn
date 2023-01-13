@@ -72,7 +72,7 @@ export default {
 .input-place button{
     width: 150px;
     height: 50px;
-    margin: 20px auto;
+    margin: 15px auto;
     margin-left: 120px;
     border: 3px #ffffff;
     border-style: solid;

@@ -30,7 +30,7 @@ import 'animate.css'
 import ElementUI from 'element-ui'
 
 import 'element-ui/lib/theme-chalk/index.css'
- 
+import 'element-ui/lib/theme-chalk/base.css';
 /* 头部组件 */
 import Header from './components/Header'
 Vue.component(Header.name,Header)
@@ -52,6 +52,7 @@ Vue.config.productionTip = false
 
 Vue.use(ElementUI)
 router.beforeEach((to, from,next) => {
+	sessionStorage.setItem("username",'123456');
 	const username = sessionStorage.getItem("username");
 		if(to.name == 'login'){
 			console.log(to.name)
@@ -65,7 +66,6 @@ router.beforeEach((to, from,next) => {
 			console.log(to.name + from.name + username);
 			next() ;
 		}
-		
 });
 
 
