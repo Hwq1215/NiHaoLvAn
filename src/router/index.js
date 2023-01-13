@@ -2,14 +2,17 @@ import Vue from 'vue'
 import Router from 'vue-router'
 Vue.use(Router)
 
-export default new Router({
+export default new Router(
+
+  
+  {
+  
   routes: [
-    {
-      path: '*',
-      redirect: '/'
-    }, {
+    { path: '/login',
+      name: 'login',
+      component: resolve => require(['@/view/Login'],resolve)
+    },{
       path: '/',
-      name: 'PageView',
       component: resolve => require(['@/view/PageView'], resolve),
       children: [
         {
@@ -99,3 +102,4 @@ export default new Router({
     }
   ]
 })
+
