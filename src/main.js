@@ -51,15 +51,21 @@ Vue.component(LoginForm.name,LoginForm)
 Vue.config.productionTip = false
 
 Vue.use(ElementUI)
-router.beforeEach((to, from, next) => {
-
-    if(sessionStorage.getItem("username")==undefined && to.name !== 'login'){
-      next({name: 'login'})
-    }
-    if(to.meta.title){
-      document.title = to.meta.title
-    }
-    next();
+router.beforeEach((to, from,next) => {
+	const username = sessionStorage.getItem("username");
+		if(to.name == 'login'){
+			console.log(to.name)
+			next();
+		}
+		else if(username != '123456' ){
+			// 没有登录则进入login界面
+			console.log("进入")
+			next('login');
+		}else{
+			console.log(to.name + from.name + username);
+			next() ;
+		}
+		
 });
 
 

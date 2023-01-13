@@ -44,10 +44,10 @@ export default {
     width: 305px;
     height: 50px;
     margin: 40px auto;
-    border: 3px #ffffff;
+    border: 2px #e0dee3;
     border-style: solid;
     border-radius: 30px;
-    background-color: #ebebeb;
+    background-color: #e0dee3;
     display:flex;
 }
 
@@ -65,7 +65,8 @@ export default {
     font-size: 16px;
     border: none;
     outline: none;
-    background-color: #ebebeb
+    background-color: #e0dee3;
+    box-shadow: 0 0 0px 1000px #e0dee3 inset;
 }
 
 .input-place button{
