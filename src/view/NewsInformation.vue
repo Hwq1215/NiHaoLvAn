@@ -8,6 +8,7 @@
                 </div>
             </div>
         </div>
+
         <div class="container-fuild" id="SpecificCase">
             <div class="materials">
                 <div class="purchase">
@@ -162,6 +163,7 @@ export default {
     display: flex;
     margin-bottom: 26px;
 }
+
 .corporation {
     width: 974px;
     height: 240px;

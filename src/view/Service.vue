@@ -369,8 +369,8 @@ export default {
 }
 
 /* .question>img { */
-/* display: block; */
-/* margin: 0 auto; */
+    /* display: block; */
+    /* margin: 0 auto; */
 /* } */
 
 /* .Service-container{
