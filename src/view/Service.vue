@@ -1,34 +1,17 @@
 <template>
     <div id="Technology">
-        <!-- <div class="container text-center">
-            <h3>我们的服务</h3>
-            <p style="color:#b2b2b2">The Best Service You Never See</p>
-        </div>
-        <div class="container">
-            <div class="Service-container row">
-                <div class="Service-item col-xs-12 col-sm-6 col-md-3 wow slideInUp" 
-                v-for="(item,index) in serviceList" :key="index" @click="ServiceClick(item.id)">
-                    <div class="Service-item-wrapper">
-                        <div class="Service-item-top">
-                            <h4>{{item.title}}</h4>
-                            <i></i>
-                            <p>{{item.eng_title}}</p>
-                        </div>
-                        <div class="Service-item-img">
-                            <img :src="item.img" alt="服务">
-                        </div>
-                        <div class="Service-item-border"></div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
         <div class="container-fuild" id="Show">
             <div class="show">
-                <!-- <img src="@/assets/img/trust_team.svg" alt="" class="excavator">
-                <div class="video"> -->
-                这里放轮播图
-                <!-- <a href="#"><img src="@/assets/img/learn_more.svg" alt=""></a> -->
-                <!-- <video src=""></video> -->
+                <div id="swiper" class="container-fuild">
+                    <div class="swiper-container banner-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" v-for="(item, index) in swiperList" :key="index">
+                                <img class="swiper-lazy" :data-src="item.img" alt="轮播图">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="container-fuild" id="ChiniTransTech">
@@ -39,10 +22,10 @@
                     <img src="@/assets/img/chini_trans_tech_show.svg" alt="">
                 </div>
                 <div class="chini_trans_tech_intr">
-                   <img src="@/assets/img/chini_trans_tech_intr.svg" alt="">
-                   <div class="buy">
-                    <a href="#"><img src="@/assets/img/buy.svg" alt=""></a>
-                   </div>
+                    <img src="@/assets/img/chini_trans_tech_intr.svg" alt="">
+                    <div class="buy">
+                        <a href="#"><img src="@/assets/img/buy.svg" alt=""></a>
+                    </div>
                 </div>
                 <div class="switch">
                     <div class="theory">
@@ -65,13 +48,13 @@
                     <img src="@/assets/img/diol_compre_tech_show.svg" alt="">
                 </div>
                 <div class="diol_compre_tech_intr">
-                   <img src="@/assets/img/diol_compre_tech_intr.svg" alt="">
-                   <div class="buy">
-                    <a href="#"><img src="@/assets/img/buy.svg" alt=""></a>
-                   </div>
+                    <img src="@/assets/img/diol_compre_tech_intr.svg" alt="">
+                    <div class="buy">
+                        <a href="#"><img src="@/assets/img/buy.svg" alt=""></a>
+                    </div>
                 </div>
                 <div class="switch_diol">
-                    
+
                     <div class="none effect">
                         <a href="#"><img src="@/assets/img/effect.svg" alt=""></a>
                     </div>
@@ -95,8 +78,8 @@
                     <img src="@/assets/img/trans_ent_intr_show.svg" alt="">
                 </div>
                 <div class="trans_ent_intr_intr">
-                   <img src="@/assets/img/trans_ent_intr_intr.svg" alt="">
-                   <!-- <div class="buy">
+                    <img src="@/assets/img/trans_ent_intr_intr.svg" alt="">
+                    <!-- <div class="buy">
                     <a href="#"><img src="@/assets/img/buy.svg" alt=""></a>
                    </div> -->
                 </div>
@@ -120,50 +103,55 @@
     </div>
 </template>
 <script>
-import { WOW } from 'wowjs';
+import Swiper from "swiper";
 export default {
     name: 'Service',
     data() {
         return {
-            serviceList: [
+            swiperList: [
                 {
-                    id: 'section-1',
-                    title: '软件定制开发',
-                    eng_title: 'Customize App',
-                    img: require('@/assets/img/service1.jpg')
-                }, {
-                    id: 'section-2',
-                    title: 'IT外包服务',
-                    eng_title: 'Outsourcing',
-                    img: require('@/assets/img/service2.jpg')
-                }, {
-                    id: 'section-3',
-                    title: '网上商城建设',
-                    eng_title: 'eCommerce Site',
-                    img: require('@/assets/img/service3.jpg')
-                }, {
-                    id: 'section-4',
-                    title: 'iOS应用定制开发',
-                    eng_title: 'iOS App Dev',
-                    img: require('@/assets/img/service4.jpg')
+                    img: require("../assets/img/show_1.svg"),
+                    path: ''
+                },
+                {
+                    img: require("../assets/img/show_1.svg"),
+                    path: ''
+                },
+                {
+                    img: require("../assets/img/show_1.svg"),
+                    path: ''
                 }
             ]
-        }
+        };
     },
     mounted() {
-        var wow = new WOW();
-        wow.init();
+        new Swiper(".banner-swiper", {
+            loop: true, // 循环模式选项
+            effect: 'slide',
+            //自动播放
+            autoplay: {
+                delay: 3000,
+                stopOnLastSlide: false,
+                disableOnInteraction: false
+            },
+            // 如果需要分页器
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            // 延迟加载
+            lazy: {
+                loadPrevNext: true
+            },
+            observer: true, //修改swiper自己或子元素时，自动初始化swiper
+            observeParents: true //修改swiper的父元素时，自动初始化swiper
+        });
     },
-    methods: {
-        ServiceClick(id) {
-            this.$router.push({
-                name: 'servicedetail',
-                params: {
-                    id: id
-                }
-            })
-        }
-    }
 }
 </script>
 <style scoped>
@@ -187,24 +175,38 @@ export default {
     background-color: #FFA54D;
 }
 
+.banner-swiper {
+    height: 518px;
+    width: 1440px;
+    position: absolute;
+    /* top: 119px;
+    right: 200px;
+    border-radius: 34px; */
+    overflow: hidden;
+}
+
 /* 赤泥转化技术 */
 #ChiniTransTech {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .chini_trans_tech {
     width: 1440px;
     height: 748px;
     position: relative;
 }
+
 .chini_trans_tech>span {
     line-height: 56px;
 }
+
 .chini_trans_tech>img {
     display: block;
     margin: 0 auto;
 }
+
 .chini_trans_tech_show {
     width: 570px;
     height: 372px;
@@ -214,18 +216,21 @@ export default {
     border-radius: 18px;
     overflow: hidden;
 }
+
 .chini_trans_tech_intr {
     width: 651.01px;
     height: 368px;
     position: absolute;
-    top:160px;
+    top: 160px;
     right: 54.99px
 }
+
 .buy {
     position: absolute;
     bottom: 0;
     right: 4px;
 }
+
 .switch {
     width: 542.41px;
     height: 139.43px;
@@ -235,12 +240,14 @@ export default {
     position: absolute;
     top: 557.57px;
     left: 464.99px;
-    
+
 }
+
 .none {
     filter: grayscale(100%);
 }
-.switch >div:hover{
+
+.switch>div:hover {
     filter: grayscale(0);
 }
 
@@ -250,18 +257,22 @@ export default {
     align-items: center;
     justify-content: center;
 }
+
 .diol_compre_tech {
     width: 1440px;
     height: 843px;
     position: relative;
 }
+
 .diol_compre_tech>span {
     line-height: 52px;
 }
+
 .diol_compre_tech>img {
     display: block;
     margin: 0 auto;
 }
+
 .diol_compre_tech_show {
     width: 506px;
     height: 279.77px;
@@ -270,6 +281,7 @@ export default {
     right: 272px;
     overflow: hidden;
 }
+
 .diol_compre_tech_intr {
     width: 831.05px;
     height: 353.74px;
@@ -277,12 +289,14 @@ export default {
     bottom: 29.26px;
     right: 54.95px;
 }
+
 .buy {
     position: absolute;
     bottom: 0px;
     right: 4px;
 }
-.switch_diol{
+
+.switch_diol {
     width: 148px;
     height: 667px;
     display: flex;
@@ -291,12 +305,14 @@ export default {
     align-items: center;
     position: absolute;
     top: 147px;
-    left: 252px;  
+    left: 252px;
 }
+
 .none {
     filter: grayscale(100%);
 }
-.switch_diol >div:hover{
+
+.switch_diol>div:hover {
     filter: grayscale(0);
 }
 
@@ -306,17 +322,20 @@ export default {
     align-items: center;
     justify-content: center;
 }
+
 .trans_ent_intr {
     width: 1440px;
     height: 633px;
     position: relative;
 }
+
 .trans_ent_intr>img {
     display: block;
     /* margin: 0 auto; */
     position: absolute;
     left: 136px;
 }
+
 .trans_ent_intr_show {
     width: 792px;
     height: 456px;
@@ -326,11 +345,12 @@ export default {
     border-radius: 17px;
     overflow: hidden;
 }
+
 .trans_ent_intr_intr {
     width: 436px;
     height: 259px;
     position: absolute;
-    bottom:126px;
+    bottom: 126px;
     right: 84px;
 }
 
@@ -340,12 +360,14 @@ export default {
     align-items: center;
     justify-content: center;
 }
+
 .question {
     width: 1440px;
     height: 581px;
     position: relative;
     overflow: hidden;
 }
+
 /* .question>img { */
     /* display: block; */
     /* margin: 0 auto; */
