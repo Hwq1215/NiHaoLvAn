@@ -1,9 +1,8 @@
 <template>
   <div id="app">
-    <Header class="header"></Header>
-    <router-view/>
-    <Footer></Footer>
-    <GoTop></GoTop>
+    <KeepAlive>
+      <router-view/>
+    </KeepAlive>
   </div>
 </template>
 

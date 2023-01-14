@@ -22,11 +22,18 @@
                 </div>
             </div>
         </div> -->
+        
         <div class="container-fuild" id="Show">
             <div class="show">
+                <!--这里可以参考https://element.eleme.io/#/zh-CN/component/carousel#carousel-attributes-->
+                <el-carousel :interval="5000" arrow="hover" height="500px">
+                    <el-carousel-item v-for="index in 5" :key="index">
+                        <h3 style="text-align: center;">技术图片{{index}} </h3>
+                    </el-carousel-item>
+                </el-carousel>
                 <!-- <img src="@/assets/img/trust_team.svg" alt="" class="excavator">
                 <div class="video"> -->
-                这里放轮播图
+                
                 <!-- <a href="#"><img src="@/assets/img/learn_more.svg" alt=""></a> -->
                 <!-- <video src=""></video> -->
             </div>

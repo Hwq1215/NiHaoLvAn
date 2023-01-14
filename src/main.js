@@ -2,9 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-import ElementUI from 'element-ui'
-// import 'element-ui/lib/theme-chalk/index.css'
-Vue.use(ElementUI)
+
 /* 路由 */
 import router from './router'
 
@@ -29,8 +27,10 @@ import './assets/js/bootstrap.min'
 
 /* animate.css */
 import 'animate.css'
+import ElementUI from 'element-ui'
 
- 
+import 'element-ui/lib/theme-chalk/index.css'
+import 'element-ui/lib/theme-chalk/base.css';
 /* 头部组件 */
 import Header from './components/Header'
 Vue.component(Header.name,Header)
@@ -44,14 +44,28 @@ Vue.component(Footer.name,Footer)
 import GoTop from './components/GoTop'
 Vue.component(GoTop.name,GoTop)
 
+/*登录表*/
+import LoginForm from './components/LoginForm'
+Vue.component(LoginForm.name,LoginForm)
+
 Vue.config.productionTip = false
 
-
-router.beforeEach((to, from, next) => {
-    if(to.meta.title){
-      document.title = to.meta.title
-    }
-    next();
+Vue.use(ElementUI)
+router.beforeEach((to, from,next) => {
+	sessionStorage.setItem("username",'123456');
+	const username = sessionStorage.getItem("username");
+		if(to.name == 'login'){
+			console.log(to.name)
+			next();
+		}
+		else if(username != '123456' ){
+			// 没有登录则进入login界面
+			console.log("进入")
+			next('login');
+		}else{
+			console.log(to.name + from.name + username);
+			next() ;
+		}
 });
 
 

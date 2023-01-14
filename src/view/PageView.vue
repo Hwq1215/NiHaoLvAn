@@ -1,6 +1,11 @@
 <template>
     <div id="container">
-        <router-view />
+            <Header class="header"></Header>
+            <KeepAlive :max="15">
+                <router-view />
+            </KeepAlive>
+            <Footer></Footer>
+            <GoTop></GoTop>
     </div>
 </template>
 <script>
