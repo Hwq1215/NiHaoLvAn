@@ -7,15 +7,16 @@
             :autoplay="false" 
             height="500px" 
             arrow="hidden"
-            class="carousel-outside">
-                <el-carousel-item >
+            class="carousel-outside el-carousel_login "
+            >
+                <el-carousel-item class="el-carousel__item_login">
                     <h3 class="text-center"><b>用户登录</b></h3>
                     <login-form firstPlaceHolder="请输入用户名" secondPlaceHolder="请输入密码" >
                     <template v-slot:loginbutton="value"><button @click="login(value.val1,value.val2)" type="button">登录</button></template>
                     </login-form>
                 </el-carousel-item> 
             
-                <el-carousel-item >
+                <el-carousel-item class="el-carousel__item_login">
                     <h3 class="text-center"><b>用户注册</b></h3>
                     <login-form firstPlaceHolder="请输入用户名" secondPlaceHolder="请输入密码" >
                     <template v-slot:loginbutton="value">
@@ -25,7 +26,7 @@
                     </login-form>
                 </el-carousel-item>
 
-                <el-carousel-item >
+                <el-carousel-item class="el-carousel__item_login">
                     <h3 class="text-center"><b>找回密码</b></h3>
                     <login-form firstPlaceHolder="请输入用户名" secondPlaceHolder="请输入新密码" >
                     <template v-slot:loginbutton="value">
@@ -57,13 +58,13 @@
         margin-top: 12%;
     }
 
-    .el-carousel{
+    .el-carousel_login{
         border: 100px #ffffff;
         border-radius: 20px 20px 20px 20px;;
         border: inline;
     }
 
-    .el-carousel__button{
+    .el-carousel_login .el-carousel__button{
         border: 1px #b1b19f;
         border-radius: 5px;
         height: 8px;
@@ -73,7 +74,7 @@
         opacity: 0.3;
     }
 
-    .el-carousel__item:nth-child(n) {
+    .el-carousel__item_login:nth-child(n) {
     margin: auto;
     background-color: #ffffff;
     opacity: 0.90;
@@ -113,6 +114,11 @@ export default{
         login(username,password){
             if(username == '123456' && password == '123456'){
                 sessionStorage.setItem('username',username)
+                sessionStorage.setItem('navIndex',0)
+                this.$message({
+                    message: '登录成功',
+                    type: 'success'
+                  });
                 this.$router.push({name:'home'})
             }
             else{

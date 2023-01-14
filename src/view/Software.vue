@@ -13,14 +13,14 @@
                 <router-view></router-view>
             </div>
         </div> -->
-        <div class="container-fuild" id="Trust">
+        <el class="container-fuild" v-loading="loading" id="Trust">
             <div class="trust">
                 <img src="@/assets/img/trust_team.svg" alt="" class="excavator">
                 <div class="picture">
                     <img src="@/assets/img/trust_team_picture.svg">
                 </div>
             </div>
-        </div>
+        </el>
         <div class="container-fuild" id="About">
             <div class="about">
                 <img src="@/assets/img/you_should_know_more.svg" alt="">

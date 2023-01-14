@@ -27,6 +27,11 @@
           </dl> -->
         </div>
         </li>
+        <li >
+          <div class="nav-login">
+              <router-link :to="{name:'login'}" > <i class="el-icon-user-solid " ></i></router-link>
+          </div>
+        </li>
       </ul>
     </div>
     <!-- 手机导航 -->
@@ -60,7 +65,7 @@
               <i class="underline"></i>
             </router-link>
           </li>
-          <li>登录</li>
+          
         </ul>
         
       </div>
@@ -212,6 +217,7 @@ export default {
   font-size: 24px !important;
   /* margin: 0 0px !important; */
 }
+
 /* 导航栏 每个导航下面的 a 链接 */
 #header .header-nav .header-nav-wrapper > li > .nav-link > a {
   color: #000;
@@ -219,8 +225,16 @@ export default {
   font-weight: bold;
   padding: 15px 0;
   position: relative;
+}
+#header .header-nav .header-nav-wrapper > li > .nav-login{
+  width: 50px;
+  font-size: 24px !important;
+  /* margin: 0 0px !important; */
+}
+#header .header-nav .header-nav-wrapper > li > .nav-login > a{
+  color: #ec7119;
 
-  
+  /* margin: 0 0px !important; */
 }
 /* 导航栏 每个导航下面的 a 链接的下划线 */
 /* #header .header-nav .header-nav-wrapper > li > a > i {

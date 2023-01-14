@@ -4,7 +4,7 @@
       <div> ' </div>
       <h2>联系我们</h2>
   <el-row >
-    <el-col :span="13" :offset="1">
+    <el-col :span="15" :offset="1">
       <transition name="el-fade-in">
         <div v-show="show" class="transition-box">
         <el-card>
@@ -31,7 +31,7 @@
         </div>
       </transition>
     </el-col>
-    <el-col :span="8" :offset="1">
+    <el-col :span="7" :offset="1">
       <transition name="el-fade-in">
         <div v-show="show" class="transition-box">
         <el-card class="info-card">
@@ -112,7 +112,7 @@ export default{
 
 .info-card{
   margin-top: px;
-  width: 450px;
+  width: 350px;
   height: 460px;
   border: 1px #c6cad1;
   border-radius: 5px;
