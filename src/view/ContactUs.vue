@@ -1,9 +1,9 @@
 <template>
-<div>
+<div class="out-box">
     <div class="contact-pic">
-      <div> ' </div>
+      <div>.</div>
       <h2>联系我们</h2>
-  <el-row >
+  <el-row class="row-box">
     <el-col :span="15" :offset="1">
       <transition name="el-fade-in">
         <div v-show="show" class="transition-box">
@@ -75,9 +75,25 @@ export default{
 </script>
 
 <style>
-.el-row{
+.out-box{
+  margin: 0 auto;
+  height: 700px;
+  width: 1440px;
+}
+
+.row-box{
   margin-top: 50px;
 }
+
+.contact-pic{
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/img/contact_1.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+}
+
 
 .el-textarea{
   border: 1px #c6cad1;
@@ -87,16 +103,9 @@ export default{
   height: 200px;
   padding: 10px;
 }
-.contact-pic{
-  height: 700px;
-  background-image: url("../assets/img/contact_1.jpg");
-  background-size: cover;
-  background-position: center;
-  
-  opacity: 0.9;
-}
 
 .contact-pic > h2{
+  margin-top: 20px;
   text-align: center;
   color: #fff;
   font-size: 40px;
@@ -106,6 +115,7 @@ export default{
 .el-input{
   width: 600px;
 }
+
 .button-center{
   margin-left: 270px;
 }

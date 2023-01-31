@@ -30,8 +30,7 @@
             <div class="chini_damage">
                 <img src="@/assets/img/chini_demage.svg" alt="">
                 <div class="demage_video">
-                    赤泥危害视频
-                    <video src=""></video>
+                    <video src="../assets/video/Project_details_page_1.mp4" preload="auto" class="video-item" controls autoplay></video>
                 </div>
             </div>
         </div>
@@ -144,10 +143,12 @@ export default {
     justify-content: center;
 }
 
+
 .chini_damage {
     width: 1440px;
     height: 788px;
     position: relative;
+    
 }
 
 .chini_damage>img {
@@ -157,12 +158,17 @@ export default {
 }
 
 .chini_damage>.demage_video {
-    width: 740px;
-    height: 420px;
+    width: 630px;
+    height: 362px;
     position: absolute;
     top: 80px;
     right: 123px;
     background-color: #D9D9D9;
+    border-radius: 40px;
+}
+.chini_damage>.demage_video>video{
+    width: 100%;
+    height: 100%;
     border-radius: 40px;
 }
 
