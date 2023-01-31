@@ -7,13 +7,12 @@
       <!-- <div class="relatedlink">相关链接</div> -->
       <ul>
         <li class="relatedlink">相关链接:</li>
-        <li><a href="#">企业服务</a></li>
-        <li><a href="#">企业服务</a></li>
-        <li><a href="#">企业服务</a></li>
-        <li><a href="#">企业服务</a></li>
+        <li><a href="http://13567.fm086.com/">广西平果铝</a></li>
+        <li><a href="https://www.chinalco.com.cn/">中铝集团</a></li>
+        <li><a href="https://sdly.chinalco.com.cn/">中铝山东</a></li>
+        <li><a href="http://www.600219.com.cn/">南山铝业</a></li>
       </ul>
     </div>
-    <el-container></el-container>
     <!-- <p class="title">公司企业网站模板</p>
     <p class="address_tel_fax">
       <span>地址：公司地址公司地址公司地址公司地址</span>
@@ -27,24 +26,34 @@
     <p class="copy">Copyright &copy; 2018 - 2019 公司名称公司名称</p> -->
     <div class="footer">
       <ul class="helplist">
-        <li class="help">帮助中心</li>
-        <li><a>版本更新</a></li>
-        <li><a>登陆系统</a></li>
-        <li><a>资讯产品</a></li>
+        <li class="help">关于我们</li>
+        <li><a>了解我们</a></li>
+        <li><a>价值与理念</a></li>
+        <li><a>社会责任</a></li>
+        <li><a>企业荣誉</a></li>
       </ul>
+      <ul class="helplist">
+        <li class="help">产品与服务</li>
+        <li><a>技术专栏</a></li>
+        <li><a>企业业务</a></li>
+        <li><a>企业产品</a></li>
+        <li><a>运营服务</a></li>
+      </ul>
+      
       <ul class="helplist">
         <li class="help">帮助中心</li>
         <li><a>版本更新</a></li>
         <li><a>登陆系统</a></li>
-        <li><a>资讯产品</a></li>
+        <li><a>咨询产品</a></li>
       </ul>
       <ul class="helplist">
-        <li class="help">帮助中心</li>
-        <li><a>版本更新</a></li>
-        <li><a>登陆系统</a></li>
-        <li><a>资讯产品</a></li>
+        <li class="help">加入我们</li>
+        <li><a>校园招聘</a></li>
+        <li><a>社会招聘</a></li>
+        <li><a>员工成长</a></li>
+        <li><a>员工福利</a></li>
       </ul>
-      <div class="tel">服务热线：400-233-222</div>
+      <!-- <div class="tel">服务热线：400-233-222</div> -->
     </div>
   </div>
 </template>
@@ -61,7 +70,6 @@ export default {
   margin: 0 !important;
   padding: 0 !important;
 }
-
 #footer {
   width: 100%;
   height: 400px;
@@ -70,13 +78,11 @@ export default {
   overflow: hidden;
   text-align: center;
 }
-
 .link {
   width: 100%;
   height: 100px;
   background-color: #FF8F50;
 }
-
 .link>ul {
   width: auto;
   height: 100px;
@@ -87,7 +93,6 @@ export default {
   /*position: relative;*/
   text-align: center;
 }
-
 .link > ul > li {
   float: left;
 			width: 20%;
@@ -98,7 +103,6 @@ export default {
       font-size: 32px;
       color: #fff;
 }
-
 .link >ul > li > a {
   /* display: block; */
   color: #fff;
@@ -106,7 +110,6 @@ export default {
 .link >ul > li > a:hover{
   text-decoration: none;
 }
-
 .footer {
   width: 100%;
   height: 300px;
@@ -116,30 +119,25 @@ export default {
   background-color: #8E8E8E;
   /* line-height: 300px; */
 }
-
 .footer > .helplist  {
   /* line-height: calc(300px/4) ; */
   /* flex: 0 0 30%; */
   text-align: left;
 }
-
 .footer > .helplist > .help {
   font-size: 24px;
   color: #fff;
   line-height: 57px;
 }
-
 .footer > .helplist > li > a {
   color: #fff;
   font-size: 18px;
   line-height: 36px;
 }
-
 .footer > .tel {
   font-size: 28px;
   flex: 0 0 30%;
 }
-
 /* .logo {
   width: 95px;
   height: 45px;
@@ -167,20 +165,15 @@ export default {
   .title {
     font-size: 20px;
   }
-
   .address_tel_fax {
     font-size: 12px;
   }
-
   .email_wx {
-
     font-size: 12px;
   }
-
   .copy {
     font-size: 12px;
     margin: 30px 0 10px;
   }
 }
 </style>
-
