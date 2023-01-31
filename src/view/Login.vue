@@ -45,15 +45,17 @@
 
 <style>
     .login-item{
-        background: url("../assets/img/login.svg");
+        background: url("../assets/img/login_background.png");
         background-size: cover;
         margin-top: -5%;
-        
+        margin: 0 auto;
+        height: 793px;
+        width: 1536px;
     }
 
     .login-form{
         width: 400px;
-        height: 663px;
+        height: 500px;
         margin-left: 55%;
         margin-top: 12%;
     }
