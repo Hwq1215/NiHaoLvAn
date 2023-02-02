@@ -130,6 +130,9 @@ export default {
   },
   created(){
     this.navIndex = sessionStorage.getItem('navIndex') ? sessionStorage.getItem('navIndex') : 0
+  },
+  activated() {
+    this.navIndex = sessionStorage.getItem('navIndex') ? sessionStorage.getItem('navIndex') : 0
   },  
   methods: {
     navClick(index, name) {

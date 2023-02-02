@@ -39,7 +39,7 @@
           <img src="../assets/img/wechat.jpg" alt="公众号" width="270px" height="270px">
           <h4>联系方式:</h4>
           <p>电话：123456789</p>
-          <p>邮箱：123456789@qq.com</p>
+          <p>邮箱：123456789@email.com</p>
         </el-card>
         </div>
       </transition>

@@ -1,16 +1,17 @@
 <template>
     <div class="login-item">
         <div>`</div>
-        <div class="login-form">
+        <div class="login-box">
+            <div class="login-form">
             <el-carousel 
             trigger="click" 
             :autoplay="false" 
-            height="500px" 
+            height="680px" 
             arrow="hidden"
             class="carousel-outside el-carousel_login "
             >
                 <el-carousel-item class="el-carousel__item_login">
-                    <h3 class="text-center"><b>用户登录</b></h3>
+                    <h2 class="text-center"><b>用户登录</b></h2>
                     <login-form firstPlaceHolder="请输入用户名" secondPlaceHolder="请输入密码" >
                     <template v-slot:loginbutton="value"><button @click="login(value.val1,value.val2)" type="button">登录</button></template>
                     </login-form>
@@ -37,7 +38,8 @@
             
             </el-carousel>
         </div>
-
+        </div>
+        <div class="login-fix">`</div>
     </div>
     
 </template>
@@ -45,19 +47,19 @@
 
 <style>
     .login-item{
-        background: url("../assets/img/login_background.png");
-        background-size: cover;
-        margin-top: -5%;
+        background: url("../assets/img/login_background.png") no-repeat;
+        background-size: 100% 100%;
         margin: 0 auto;
-        height: 793px;
-        width: 1536px;
+        position:fixed;
+        height:100%;
+        width:100%;
     }
-
+    
     .login-form{
-        width: 400px;
-        height: 500px;
+        width: 600px;
+        height: 700px;
         margin-left: 55%;
-        margin-top: 12%;
+        margin-top: 5%;
     }
 
     .el-carousel_login{
@@ -69,8 +71,8 @@
     .el-carousel_login .el-carousel__button{
         border: 1px #b1b19f;
         border-radius: 5px;
-        height: 8px;
-        width: 40px;
+        height: 10px;
+        width: 50px;
         background-color: #f79f4d;
         border-style: solid;
         opacity: 0.3;
@@ -92,6 +94,18 @@
     text-align: center;
     text-shadow: 2px 2px 4px #c8a997;
 
+   }
+
+   .login-fix{
+    background: url("../assets/img/login_background.png") no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    height:100%;
+    width:100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
    }
 
 </style>
