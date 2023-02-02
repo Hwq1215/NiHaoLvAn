@@ -13,9 +13,5 @@ export default {
 </script>
 
 <style>
-/* .header {
-  position: fixed;
-  width: 100%;
-  z-index: 100;
-} */
+
 </style>

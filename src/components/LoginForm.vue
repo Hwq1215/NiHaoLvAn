@@ -35,34 +35,35 @@ export default {
 
 <style>
 .input-place{
-    margin-top: 70px;
-    width: 400px;
-    height: 200px;
+    margin-top: 15%;
+    width: 100%;
+    height: 300px;
 }
 
 .input-place > div{
-    width: 305px;
-    height: 50px;
+    width: 500px;
+    height: 80px;
     margin: 40px auto;
+    margin-top: 10%;
     border: 2px #e0dee3;
     border-style: solid;
-    border-radius: 30px;
+    border-radius: 40px;
     background-color: #e0dee3;
     display:flex;
 }
 
 .input-place i{
-    margin-top: 10px;
-    margin-left: 15px;
-    font-size: 23px;
+    margin-top: 24px;
+    margin-left: 20px;
+    font-size: 30px;
     color: #fc8c1e;
 }
 
 .input-place input{
-    width: 220px;
-    height: 30px;
+    width: 380px;
+    height: 35px;
     margin: auto;
-    font-size: 16px;
+    font-size: 20px;
     border: none;
     outline: none;
     background-color: #e0dee3;
@@ -70,13 +71,13 @@ export default {
 }
 
 .input-place button{
-    width: 150px;
-    height: 50px;
-    margin: 15px auto;
-    margin-left: 120px;
+    width: 180px;
+    height: 70px;
+    margin: 20px auto;
+    margin-left: 35%;
     border: 3px #ffffff;
     border-style: solid;
-    border-radius: 30px;
+    border-radius: 40px;
     background-color: #fc8c1e;
     color: #ffffff;
     font-size: 20px;

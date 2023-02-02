@@ -26,9 +26,9 @@
         <div class="container-fuild" id="Show">
             <div class="show">
                 <!--这里可以参考https://element.eleme.io/#/zh-CN/component/carousel#carousel-attributes-->
-                <el-carousel :interval="5000" arrow="hover" height="500px">
-                    <el-carousel-item v-for="index in 5" :key="index">
-                        <h3 style="text-align: center;">技术图片{{index}} </h3>
+                <el-carousel :interval="5000" arrow="hover" height="500px" >
+                    <el-carousel-item v-for="img in swiperImgs" :key="index">
+                        <img :src="img.path"/>
                     </el-carousel-item>
                 </el-carousel>
                 <!-- <img src="@/assets/img/trust_team.svg" alt="" class="excavator">
@@ -154,6 +154,23 @@ export default {
                     eng_title: 'iOS App Dev',
                     img: require('@/assets/img/service4.jpg')
                 }
+            ],
+            swiperImgs:[
+                {
+                    path:require('@/assets/img/tech_swipper_1.svg')
+                },
+                {
+                    path:require('@/assets/img/tech_swipper_2.svg')
+                },
+                {
+                    path:require('@/assets/img/tech_swipper_3.svg')
+                },
+                {
+                    path:require('@/assets/img/tech_swipper_4.svg')
+                },
+                {
+                    path:require('@/assets/img/tech_swipper_5.svg')
+                }
             ]
         }
     },
@@ -189,7 +206,7 @@ export default {
     /* width: auto;
   height: auto; */
     width: 1440px;
-    height: 518px;
+    height: 500px;
     position: relative;
     background-color: #FFA54D;
 }

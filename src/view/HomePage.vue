@@ -103,11 +103,11 @@ export default {
           path: ''
         },
         {
-          img: require("../assets/img/transform_swipper_1.svg"),
+          img: require("../assets/img/transform_swipper_2.svg"),
           path: ''
         },
         {
-          img: require("../assets/img/transform_swipper_1.svg"),
+          img: require("../assets/img/transform_swipper_3.svg"),
           path: ''
         }
       ]
